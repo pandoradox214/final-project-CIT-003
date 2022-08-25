@@ -1,6 +1,7 @@
 .parent{
     position: relative;
-    background-color:white;
+    background-image: url('Images/background.jpg') ;
+    
 }
     .container{
         position: absolute;
