@@ -1,3 +1,10 @@
 .parent{
-    background-color: #fdb320;
+    position: relative;
+    background-color:white;
 }
+    .container{
+        position: absolute;
+        height: 25px;
+        width: 500px;
+        background-color: #fdb320;
+    }
