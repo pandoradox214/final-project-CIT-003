@@ -1,10 +1,19 @@
+body{
+    width:auto;
+    height:auto;
+    background:white;
+}
+
 .parent{
     position: relative;
-    background-color:white;
+    width: auto;
+    height: auto;
+    background-color:rgb(245, 201, 8);
 }
     .container{
         position: absolute;
-        height: 25px;
-        width: 500px;
-        background-color: #fdb320;
+        height: 300px;
+        width: 600px;
+        background-color: #f82500;
     }
+    
