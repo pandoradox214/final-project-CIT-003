@@ -6,9 +6,13 @@ body{
 
 .parent{
     position: relative;
+
     width: auto;
     height: auto;
     background-color:rgb(245, 201, 8);
+    background-image: url('Images/background.jpg') ;
+    
+
 }
     .container{
         position: absolute;
