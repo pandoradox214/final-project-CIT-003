@@ -5,17 +5,14 @@ body{
     background-image: url("Images/background.jpg") ;
     background-repeat: no-repeat;
 }
-
 .parent{
     position: relative;
 
     width: auto;
     height: auto;
     background-color:rgb(245, 201, 8);
-   
-    
-
 }
+    /* Inside*/
     .container{
         position: absolute;
         height: 300px;
