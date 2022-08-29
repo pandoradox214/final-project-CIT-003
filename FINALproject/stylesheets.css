@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'menu' ;
+    src: url("Fonts/Quickday.ttf");
+}
+
 body{
     background-image: url("Images/background.png");
     background-repeat: no-repeat;
@@ -5,32 +10,77 @@ body{
     background-size: cover;
     background-position: center;
 }
+/*Grand Parents DIV*/
+.main_parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+/*Grand Parents DIV*/
+    /*Parent*/
     .parent{
         position: relative;
-        margin-right: 20px;
-        margin-left: 20px;
         width: 1000px;
         height: 4000px;
+        background-color: #f8d321;
+
     }
-        .logo{
-            position: absolute;
-            width:110px;
-            height:110px;
-            top: 20px;
-            left: 20px;
-            border-radius: 40px;
-            opacity: 1;
-            transition: size 230ms;
-        }
-        .logo:hover{
-            opacity: 1;
-            width:150px;
-            height:150px;
-        }   
-        .nav_bar{
+        /*Navigation Area*/
+            .nav_bar{
             position:relative;
-            background-color:#f8d321;
+            background-color:#ffffff;
             width: 1000x;
             height: 160px;
+            top: 10px;
+            column-count: 4;
         }
-    
+            .logo{
+                position: relative;
+                width:110px;
+                height:110px;
+                margin-top: 20px;
+                margin-left: 10px;
+                border-radius: 40px;
+                opacity: 1;
+                transition: size 5000ms;
+
+            }
+            .logo:hover{
+                opacity: 1;
+                width:130px;
+                height:130px;
+            }
+            .nav_buttons{
+                position: absolute;
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 17px;
+                top: 70px;
+                transition: 250ms;
+            }
+            .nav_buttons:hover{
+                color: #f8d321;
+            }
+                /*Buttons*/
+                .but1{
+                    position: relative;
+                    margin-top: 150px;
+                    margin-bottom: 150px;
+                    width: 100px;
+                    height: 100px;
+                }
+                .but2{
+                    position: relative;
+                    margin-top: 150px;
+                    margin-bottom: 150px;
+                    width: 140px;
+                    height: 100px;
+                }
+                .but3{
+                    position: relative;
+                    margin-top: 150px;
+                    width: 100px;
+                    height: 100px;
+                }
+                /*Buttons*/
+        /*Navigation Area*/
