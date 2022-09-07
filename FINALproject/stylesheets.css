@@ -1,83 +1,63 @@
 @font-face {
-    font-family:'menu' ;
-    src: url("Fonts/Quickday.ttf");
+    font-family:'navigation';
+    src: url("font/nav_font.ttf");
 }
 body{
-    background-image: url("Images/background.jpg");
+    background-image: url("img/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-/*Grand Parents DIV*/
 .main_parent{
     display: flex;
     align-items: center;
     justify-content: center;
-} 
-/*Grand Parents DIV*/
-    /*Parent*/
-.parent{
-position: relative;
-width: 1000px;
-height: 4000px;
-background-color: #f8d321;
 }
-/*Navigation Area*/
-.nav_bar{
-position:relative;
-background-color:#ffffff;
-width: 1000x;
-height: 160px;
-top: 10px;
-column-count: 4;
+.parent{
+    position: relative;
+    width: 1000px; height: 2000px;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    position:absolute;
+    margin-top:auto ; margin-right: auto;
+    width: 1200px; height: 60px;
+    padding: 10px;
+    background-color: #181b21;
 }
 .logo{
-position: relative;
-width:110px;
-height:110px;
-margin-top: 20px;
-margin-left: 10px;
-border-radius: 40px;
-opacity: 1;
-transition: size 5000ms;
+    position: absolute;
+    width: 200px; height: 200px;
+    background-color: white;
+    border-radius: 100%;
+    opacity: 0.85;
 }
 .logo:hover{
-opacity: 1;
-width:130px;
-height:130px;
+    transform: rotate(-20deg);
+    width: 250px; height: 250px;
+    opacity: 1;
 }
-.nav_buttons{
-position: absolute;
-font-family: Helvetica;
-font-weight: bold;
-font-size: 17px;
-top: 70px;
-transition: 250ms;
+.navigation{
+    position: absolute;
+    margin-left: 380px;
+    display: flex;
+    flex-direction: row;
+    column-count: 3;
+    column-gap: 180px;
+    text-align: center;
+    color:white;
 }
-.nav_buttons:hover{
-color: #f8d321;
+.nav{
+    width: auto; height: auto;
+    font-family: 'navigation';
+    opacity: 0.85;
+    transition: 200ms;
 }
-/*Buttons*/
-.but1{
-position: relative;
-margin-top: 150px;
-margin-bottom: 150px;
-width: 100px;
-height: 100px;
+.nav:hover{
+    color: rgb(245, 230, 18);
+    transform: skewY(100deg);
+    transform: scaleZ(100%);
+    opacity: 1;
 }
-.but2{
-position: relative;
-margin-top: 150px;
-margin-bottom: 150px;
-width: 140px;
-height: 100px;
-}
-.but3{
-position: relative;
-margin-top: 150px;
-width: 100px;
-height: 100px;
-}
-/*Buttons*/
-/*Navigation Area*/
