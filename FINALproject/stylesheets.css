@@ -17,56 +17,54 @@ body{
 .parent{
     position: relative;
     width: 1000px; height: 2000px;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+   
 }
 .banner{
     position:absolute;
-    margin-top:auto ; margin-right: auto;
-    width: 1200px; height: 60px;
+    width: 975px; height: 60px;
+    border-style:double;
+    border-color: rgb(78, 78, 1);
     padding: 10px;
     background-color: #181b21;
+    border-radius: 10px;
+
 }
 .logo{
     position: absolute;
-    width: 200px; height: 200px;
+    width: 100px; height: 100px;
     background-color: white;
     border-radius: 100%;
-    opacity: 0.85;
 }
 .logo:hover{
-    transform: rotate(-20deg);
-    width: 250px; height: 250px;
-    opacity: 1;
+    transform: rotate(-5deg);
+    width: 150px; height: 150px;
 }
 .navigation{
     position: absolute;
-    margin-left: 380px;
+    margin-left: 300px;
     display: flex;
     flex-direction: row;
     column-count: 3;
-    column-gap: 180px;
+    column-gap: 120px;
     text-align: center;
     color:white;
 }
 .nav{
-    width: auto; height: auto;
     font-family: 'navigation';
-    opacity: 0.85;
-    transition: 200ms;
 }
 .nav:hover{
-    color: rgb(245, 230, 18);
-    transform: skewY(100deg);
-    transform: scaleZ(100%);
-    opacity: 1;
+    color: rgb(255, 238, 0);
 }
-.bodyBackground{
-    position: absolute;
-    margin-top: 300px;
-    width: 1180px; height: 1500px;
-    background-color:rgb(194, 183, 25);
-    border: 10px;
-    border-style: groove;
-    border-color: yellow;
+.slideshow{
+    margin-top: 85px;
+    width: 1000px; height: 400px;
+    background-color:rgb(219, 206, 27);
+    border-radius: 10px;
+}
+.content_main{
+    margin-top: 500px;
+    width: 1000px; height: 800px;
+    background-color: orange;
+    border-radius: 10px;
 }
