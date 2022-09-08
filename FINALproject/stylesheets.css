@@ -85,12 +85,26 @@ body{
     color: white;
     font-family: 'navigation' ;
     src: url("font/nav_font.ttf");
-    width: 170px; height: 80px;
+    width: 220px; height: 60px;
     background-color: red;
     animation: favorite 2000ms ease-in-out 200ms 1;
     margin-top: 10px;
-    margin-left: 380px;
+    margin-left: 360px;
     text-align: center;
-    text-shadow: #181b21 10px;
+    border-radius: 10px;
+    border-style:ridge;
+    border-color:  black;
 }
-@
+@keyframes favortite {
+    0%{
+        transform: scale(0,1);
+        opacity: 0;
+    }
+    60%{
+        transform: scale(1,2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
