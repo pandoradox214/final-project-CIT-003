@@ -28,7 +28,6 @@ body{
     padding: 10px;
     background-color: #181b21;
     border-radius: 10px;
-
 }
 .logo{
     position: absolute;
@@ -65,7 +64,7 @@ body{
 .content_main{
     position: relative;
     margin-top: 500px;
-    width: 1000px; height: 1000px;
+    width: 1000px; height: 2000px;
     background-color: orange;
     border-radius: 10px;
     display: flex;
@@ -74,10 +73,11 @@ body{
 }
 .main_meals{
  position: absolute;
- display: flex;
- flex-direction: row;
- width: 900px; height: 500px;
+ width: 900px; height: 1000px;
  margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ row-gap: 20px;
  background-color: rgb(196, 209, 7);
 }
 .favorite_meals{
@@ -87,7 +87,6 @@ body{
     src: url("font/nav_font.ttf");
     width: 220px; height: 60px;
     background-color: red;
-    animation: favorite 2000ms ease-in-out 200ms 1;
     margin-top: 10px;
     margin-left: 360px;
     text-align: center;
@@ -95,16 +94,17 @@ body{
     border-style:ridge;
     border-color:  black;
 }
-@keyframes favortite {
-    0%{
-        transform: scale(0,1);
-        opacity: 0;
-    }
-    60%{
-        transform: scale(1,2);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1);
-    }
+.row1{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    flex: 4;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.row>div{
+    padding: 10px;
+    
 }
