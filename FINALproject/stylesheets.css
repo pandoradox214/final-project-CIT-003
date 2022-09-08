@@ -53,9 +53,6 @@ body{
 .nav{
     font-family: 'navigation';
 }
-.nav a{
-    
-}
 .nav:hover{
     color: rgb(255, 238, 0);
 }
@@ -71,16 +68,29 @@ body{
     width: 1000px; height: 1000px;
     background-color: orange;
     border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 .main_meals{
  position: absolute;
  display: flex;
  flex-direction: row;
- width: 800px; height: 400px;
+ width: 900px; height: 500px;
  margin-top: 20px;
- background-color: red;
+ background-color: rgb(196, 209, 7);
 }
-.main_top_meals{
+.favorite_meals{
     position: absolute;
     color: white;
+    font-family: 'navigation' ;
+    src: url("font/nav_font.ttf");
+    width: 170px; height: 80px;
+    background-color: red;
+    animation: favorite 2000ms ease-in-out 200ms 1;
+    margin-top: 10px;
+    margin-left: 380px;
+    text-align: center;
+    text-shadow: #181b21 10px;
 }
+@
