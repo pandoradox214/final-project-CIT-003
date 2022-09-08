@@ -66,6 +66,7 @@ body{
     border-radius: 10px;
 }
 .content_main{
+    position: relative;
     margin-top: 500px;
     width: 1000px; height: 1000px;
     background-color: orange;
@@ -77,9 +78,9 @@ body{
  flex-direction: row;
  width: 800px; height: 400px;
  margin-top: 20px;
- background-color: white;
+ background-color: red;
 }
 .main_top_meals{
     position: absolute;
-
+    color: white;
 }
