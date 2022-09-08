@@ -53,6 +53,9 @@ body{
 .nav{
     font-family: 'navigation';
 }
+.nav a{
+    
+}
 .nav:hover{
     color: rgb(255, 238, 0);
 }
@@ -64,7 +67,19 @@ body{
 }
 .content_main{
     margin-top: 500px;
-    width: 1000px; height: 800px;
+    width: 1000px; height: 1000px;
     background-color: orange;
     border-radius: 10px;
+}
+.main_meals{
+ position: absolute;
+ display: flex;
+ flex-direction: row;
+ width: 800px; height: 400px;
+ margin-top: 20px;
+ background-color: white;
+}
+.main_top_meals{
+    position: absolute;
+
 }
