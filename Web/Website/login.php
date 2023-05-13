@@ -1,13 +1,15 @@
-<?php 
-session_start();
-
-	include("connection.php");
-	include("functions.php");
+<?php  
+session_start(); 
+if(isset($_SESSION['admin_sid']) || isset($_SESSION['customer_sid']))
+{
+	header("location:index.php");
+}
+else{
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="img/logo.jpg" sizes="32x32">
     <link rel="stylesheet" type="text/css" href="stylesheets.css">
     <link rel="stylesheet" type="text/css" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -29,17 +31,16 @@ session_start();
                 <div class="parentLog">
                     <div class="anak1">
                         <div>
-                        <form method ="post" action="login.php">
+                        <form method ="post" action="router/router.php">
                             <label>USER NAME <span aria-hidden="true" class="required">*</span><br></label>
                             <input name="username" type="text" id = "input" ><br>
                             <label>PASSWORD <span aria-hidden="true" class="required">*</span><br></label>
                             <input name="password" type="password" id = "input" ><br>
                             <span id="naalalaMo"><input name="rememberME" type="checkbox"> Remember me? </span><br><br><br>
                             <button class="logIn" type="submit">LOGIN</button>
-                            <a href=""><p>Forgot your password?</p></a>
-                            <div class="remember">Need an account? <a href="SignUp.php"><p>Create an Account</p></a></div><br>
+                            <div class="remember">Need an account? <a href="register.php"><p>Create an Account</p></a></div><br>
                             
-                            <div class="wrongers">
+                            <!-- <div class="wrongers">
                             <?php if($_SERVER['REQUEST_METHOD'] == "POST")
                                     {
                                 //something was posted
@@ -77,7 +78,7 @@ session_start();
                                 }
                             }
                             ?>
-                            </div>
+                            </div> -->
                         </form>
                         </div>
                         <div>
@@ -93,3 +94,6 @@ session_start();
         </div>
 </body>
 </html>
+<?php
+}
+?>

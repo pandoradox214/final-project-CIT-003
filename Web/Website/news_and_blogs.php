@@ -27,11 +27,10 @@
                         <li class="und"><a href="index.php" href="javascript:void(0)"> HOME </a></li>
                         <li class="und"><a href="top_meals.php"> TOP MEALS </a></li>
                         <li class="und"><a href="news_and_blogs.php" id ="newsblogs"> NEWS & BLOGS </a></li>
-                        
-                        <div class="dropdown">
-                        <li class="und"><a href="delivery.php"><button class="dropbtn">DELIVERY </li> 
-                        <li class="und"><a href="logout.php"><button class="dropbtn">Log Out</li> 
-                        </div> 
+                        <link rel="icon" href="img/logo.jpg" sizes="32x32">
+                        <li class="und"><a href="delivery.php">DELIVERY </li> 
+                        <li class="und"><a href="router/logout.php">LOG OUT</li> 
+ 
 
                         <a href="javascript:void(0);" 
                         style="font-size:15px; color:#f1ce02" 
@@ -135,7 +134,7 @@
 
             <section class="transition">
               <img src="img/Art/EGG_MAN.png" width="200px" height="200px">
-              <img src="img/Art/I don't eat fast but I can't live without sisig.png" height="200px">
+              <img src="img/Art/siss.png" height="200px">
             </section>
             <!--New Section For addional content-->
             <section class="Additional_Content">

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script rel="javascript" src="script.js" defer> </script>
+    <link rel="icon" href="img/logo.jpg" sizes="32x32">
     <title>Top meal</title>
 </head>
 <body>
@@ -27,11 +28,8 @@
                         <li class="und"><a href="index.php" href="javascript:void(0)"> HOME </a></li>
                         <li class="und"><a href="top_meals.php" id="topmeals"> TOP MEALS </a></li>
                         <li class="und"><a href="news_and_blogs.php"> NEWS & BLOGS </a></li>
-                        
-                        <div class="dropdown">
-                        <li class="und"><a href="delivery.php"><button class="dropbtn">DELIVERY </li> 
-                        <li class="und"><a href="logout.php"><button class="dropbtn">Log Out</li> 
-                        </div> 
+                        <li class="und"><a href="delivery.php">DELIVERY </li> 
+                        <li class="und"><a href="router/logout.php">LOG OUT</li> 
 
                         <a href="javascript:void(0);" 
                         style="font-size:15px; color:#f1ce02" 
