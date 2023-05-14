@@ -173,7 +173,7 @@ include 'includes/connect.php';
                               <p><strong>Date:</strong> '.$row['date'].'</p>
                               <p><strong>Payment Type:</strong> '.$row['payment_type'].'</p>							  
 							  <p><strong>Status:</strong> '.($deleted ? $status : '
-							  <form method="post" action="routers/edit-orders.php">
+							  <form method="post" action="router/edit-orders.php">
 							    <input type="hidden" value="'.$row['id'].'" name="id">
 								<select name="status">
 								<option value="Yet to be delivered" '.($status=='Yet to be delivered' ? 'selected' : '').'>Yet to be delivered</option>
