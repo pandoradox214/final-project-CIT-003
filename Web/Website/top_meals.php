@@ -1,3 +1,11 @@
+<?php
+include 'includes/connect.php';
+
+if(isset($_SESSION['user_id']))
+{
+include 'includes/wallet.php';
+?>
+<?php include "db-IMPORTANT.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,19 +25,25 @@
     <div class="parent">
         
             <!--Navigation-->
-            <span class="head">
-            <nav class="navigation" id="main-nav">
+                <span class="head">
+                <nav class="navigation" id="main-nav">
                     <a class="logoHover" href="index.php"><img src="img/logo.jpg"  alt="Logo"></a>
                     <div class="navigation_menu">
                     <ul>
                       <li><a> <iframe class="clock" scrolling="no" frameborder="no" clocktype="html5" 
                         src="https://www.clocklink.com/html5embed.php?clock=043&timezone=Philippines
                         _Manila&color=yellow&size=120&Title=&Message=&Target=&From=2022,1,1,0,0,0&Color=yellow"></iframe></a></li>
-                        <li class="und"><a href="index.php" href="javascript:void(0)"> HOME </a></li>
-                        <li class="und"><a href="top_meals.php" id="topmeals"> TOP MEALS </a></li>
+                        <li class="und"><a href="index.php" href="javascript:void(0)" > HOME </a></li>
+                        <li class="und"><a href="top_meals.php" id="home"> TOP MEALS </a></li>
                         <li class="und"><a href="news_and_blogs.php"> NEWS & BLOGS </a></li>
+                        
                         <li class="und"><a href="delivery.php">DELIVERY </li> 
-                        <li class="und"><a href="router/logout.php">LOG OUT</li> 
+                        <li class="und dropdown">
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="orders.php" data-activates="profile-dropdown"><?php echo $name;?> <i class="mdi-navigation-arrow-drop-down right"></i></a>
+                        <div class="dropdown-content">
+                          <a href="router/logout.php">LOG OUT</a>
+                        </div>
+                     </li>
 
                         <a href="javascript:void(0);" 
                         style="font-size:15px; color:#f1ce02" 
@@ -39,7 +53,7 @@
                     </div>
                 </nav>
               </span>
-            <!--Navigation-->
+        <!--Navigation-->
 
         <!--New Section For addional content-->
         <section class="Additional_Content">
@@ -219,3 +233,16 @@
     </div>
 </body>
 </html>
+<?php
+	}
+	else
+	{
+		if($_SESSION['customer_sid']==session_id())
+		{
+			header("location:index.php");		
+		}
+		else{
+			header("location:login.php");
+		}
+	}
+?>

@@ -36,10 +36,10 @@ include 'includes/wallet.php';
                         <li class="und"><a href="index.php" href="javascript:void(0)" id="home"> HOME </a></li>
                         <li class="und"><a href="top_meals.php"> TOP MEALS </a></li>
                         <li class="und"><a href="news_and_blogs.php"> NEWS & BLOGS </a></li>
-                        
+
                         <li class="und"><a href="delivery.php">DELIVERY </li> 
                         <li class="und dropdown">
-                      <a href="javascript:void(0)" id="username">username</a>
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="orders.php" data-activates="profile-dropdown"><?php echo $name;?> <i class="mdi-navigation-arrow-drop-down right"></i></a>
                         <div class="dropdown-content">
                           <a href="router/logout.php">LOG OUT</a>
                         </div>
