@@ -64,6 +64,7 @@ include 'includes/wallet.php';
               </div>
               <div id=""> <h6 id="txt">ORDER YOUR FOOD HERE</h6></div>
       <!--begin Container--->
+      <div class="scrollable">
       <form class="formValidate" id="formValidate" method="post" action="place-order.php" novalidate="novalidate">
                   <table id="data-table-customer" class="responsive-table display" cellspacing="0">
                     <thead>
@@ -85,9 +86,11 @@ include 'includes/wallet.php';
 				?>
       </tbody>
 </table>
-              </div>
+</div>  
+        
 			  <div class="input-field_col_s12">
               <i class="mdi-editor-mode-edit prefix"></i>
+              <br>
               <label for="description" id="labelNote">Any note(optional)</label><br>
               <textarea id="description" name="description"></textarea>
 			  </div>
@@ -98,6 +101,8 @@ include 'includes/wallet.php';
           </div>
         </div>
 			</form>
+      
+      </div>
       <!--End Cointainer-->
             </div>
           </section>

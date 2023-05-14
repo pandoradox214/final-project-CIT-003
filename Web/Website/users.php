@@ -254,7 +254,7 @@ include 'includes/connect.php';
                 <h4 class="header">Add User</h4>
               </div>
               <div>
-<table>
+                <table>
                     <thead>
                       <tr>
                         <th data-field="name">Username</th>

@@ -68,8 +68,26 @@ textarea{
     margin-right: 110px;
     padding: 8px;
     width: 200px;
-    background-color: #f5f3f3;
+    background-color: rgba(242, 171, 56, 1);
+    color: white;
+    cursor: pointer;
+    transition: opacity 120ms, color 120ms;
 }
+.txtArea > button:hover{
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(242, 171, 56, 1);
+}
+.txtArea > button:active{
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(242, 171, 56, 1);
+}
+
 .error{
     color: red;
+}
+.scrollable{
+    overflow-y: scroll;
+    height: 300px;
+    width: 90%;
+    margin-left: 23px;
 }

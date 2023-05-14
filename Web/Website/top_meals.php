@@ -70,7 +70,7 @@ include 'includes/wallet.php';
                     <p class="price">P65.00</p>
                     <h6>Beef Pares topped with Corn and Egg paired with Fried Garlic Rice.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                     <span class="tips">Click This to Order Beef Pares </span></a>
                     </div>
                     </div>
@@ -83,7 +83,7 @@ include 'includes/wallet.php';
                     <p class="price">P120.00</p>
                     <h6>Torched-top Bone marrow, springkled with Beef Pares Meat.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Beef Pares with Bone Marrow </span></a>
                     </div>
                     </div>
@@ -102,7 +102,7 @@ include 'includes/wallet.php';
                     <p class="price">P60.00</p>
                     <h6>Longanisa with Sunny-Side up egg and Fried Garlic Rice.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Long Silog </span></a>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ include 'includes/wallet.php';
                     <p class="price">P75.00</p>
                     <h6>Beef tapa with Sunny-Side up egg and Fried Garlic Rice.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Tapsilog</span></a>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ include 'includes/wallet.php';
                     <p class="price">P75.00</p>
                     <h6>Fried Bangus with Sunny-Side up egg and Fried Garlic Rice.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Bangsilog</span></a>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ include 'includes/wallet.php';
                     <p class="price">P60.00</p>
                     <h6>Cornbeef with Sunny-Side up egg and Freshly cooked Plain Rice.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Cornsilog</span></a>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ include 'includes/wallet.php';
                     <p class="price">P65.00 - P95.00 </p>
                     <h6>Buffalo wings with Sunny-Side up egg and Fried Gralic Rice.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Buffalo Silog </span></a>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ include 'includes/wallet.php';
                     <p class="price">P95.00</p>
                     <h6>Sisig, beef style on a sizzling plate side with Fried rice and topped with egg and mayo.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Beef Sisig </span></a>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ include 'includes/wallet.php';
                     <p class="price">P95.00</p>
                     <h6>Chicken Wings with Fried Sunny-Side up egg, sizzling with Gravy.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Sizzling Wings </span></a>
                         </div>
                     </div>
@@ -202,7 +202,7 @@ include 'includes/wallet.php';
                     <p class="price">P75.00</p>
                     <h6>Steamy Burger patty with Fried Garlic rice and Sizzling Gravy.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips">Click This to Order Burger Steak </span></a>
                         </div>
                     </div>
@@ -215,7 +215,7 @@ include 'includes/wallet.php';
                     <p class="price">P150.00</p>
                     <h6>Bone Marron Atop Beef sisig with Fried rice, In a Sizzling Plate.</h6>
                     <br>
-                    <a href="delivery.html" class="remove"><div class="moretips">Order Now!
+                    <a href="delivery.php" class="remove"><div class="moretips">Order Now!
                         <span class="tips" id="tipsy">Click This to Order Bone Marrow on Beef Sisig </span></a>
                         </div>
                     </div>

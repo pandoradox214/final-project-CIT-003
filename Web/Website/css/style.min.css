@@ -411,6 +411,9 @@ input.header-search-input:focus {
   top: -9px;
 }
 #curve_chart {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 380px;
   align-items: center
 }
 .notification-badge {
