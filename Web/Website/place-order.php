@@ -199,8 +199,7 @@ $verified = $row['verified'];
                         <div class="input-field col s12">
 							<label for="payment_type">Payment Type</label><br><br>
 							<select id="payment_type" name="payment_type">
-									<option value="Wallet" selected>Wallet</option>
-									<option value="Cash On Delivery" <?php if(!$verified) echo 'disabled';?>>Cash on Delivery</option>							
+                <option value="Cash On Delivery" selected>Cash on Delivery</option>	
 							</select>
                         </div>
                       </div>					
@@ -212,22 +211,8 @@ $verified = $row['verified'];
 							<div class="errorTxt1"></div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <i class="mdi-action-credit-card prefix"></i>
-							<input name="cc_number" id="cc_number" type="text" data-error=".errorTxt2" required>
-							<label for="cc_number" class="">Card Number</label>
-							<div class="errorTxt2"></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <i class="mdi-communication-vpn-key prefix"></i>	
-							<input name="cvv_number" id="cvv_number" type="text" data-error=".errorTxt3" required>
-							<label for="cvv_number" class="">CVV Number</label>								
-							<div class="errorTxt3"></div>
-                        </div>
-                      </div>					  
+  
+         				  
                       <div class="row">
                         <div class="row">
                           <div class="input-field col s12">
@@ -295,7 +280,7 @@ $verified = $row['verified'];
                 <span>'.$value.' (Quantity)</span>
             </div>
             <div class="col s3">
-                <span>$'.$price.'</span>
+                <span>₱'.$price.'</span>
             </div>
         </div>
     </li>';
@@ -311,7 +296,7 @@ $verified = $row['verified'];
                 <span>&nbsp;</span>
             </div>
             <div class="col s3">
-                <span><strong>$'.$total.'</strong></span>
+                <span><strong>₱'.$total.'</strong></span>
             </div>
         </div>
     </li>';
@@ -340,15 +325,7 @@ $verified = $row['verified'];
 
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
- <!-- START FOOTER -->
- <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-      <span>Copyright © <?php echo date("Y"); ?><span class="right"><a class="grey-text text-lighten-4" href="https://sourcecodester.com">SourceCodester</a></span>
-        </div>
-    </div>
-  </footer>
-    <!-- END FOOTER -->
+
 
 
 

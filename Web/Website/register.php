@@ -131,22 +131,7 @@ else{
 			      <div class="errorTxt4"></div>			
           </div>
         </div>	
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-credit-card prefix"></i>
-            <input name="number" minLength = "16" maxLength="16" id="account_number" type="number" data-error=".errorTxt5">
-            <label for="account_number">Account Number</label>
-			      <div class="errorTxt5"></div>			
-          </div>
-        </div>		
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-communication-vpn-key prefix"></i>
-            <input name="cvv" minLength = "3" maxLength="3" id="cvv" type="number" data-error=".errorTxt6">
-            <label for="cvv">CVV</label>
-			      <div class="errorTxt6"></div>			
-          </div>
-        </div>		
+        
         <div class="row">
           <div class="input-field col s12">
 			<a href="javascript:void(0);" onclick="document.getElementById('formValidate').submit();" class="btn waves-effect waves-light light-blue col s12">Register</a>

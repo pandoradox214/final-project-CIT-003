@@ -30,9 +30,9 @@ include 'includes/wallet.php';
                       <li><a> <iframe class="clock" scrolling="no" frameborder="no" clocktype="html5" 
                         src="https://www.clocklink.com/html5embed.php?clock=043&timezone=Philippines
                         _Manila&color=yellow&size=120&Title=&Message=&Target=&From=2022,1,1,0,0,0&Color=yellow"></iframe></a></li>
-                        <li class="und"><a href="index.php" href="javascript:void(0)" id="home"> HOME </a></li>
+                        <li class="und"><a href="index.php" href="javascript:void(0)" > HOME </a></li>
                         <li class="und"><a href="top_meals.php"> TOP MEALS </a></li>
-                        <li class="und"><a href="news_and_blogs.php"> NEWS & BLOGS </a></li>
+                        <li class="und"><a href="news_and_blogs.php" id="home"> NEWS & BLOGS </a></li>
 
                         <li class="und"><a href="delivery.php">DELIVERY </li> 
                         <li class="und dropdown">
