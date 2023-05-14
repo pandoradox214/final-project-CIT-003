@@ -38,7 +38,12 @@ include 'includes/wallet.php';
                         <li class="und"><a href="news_and_blogs.php"> NEWS & BLOGS </a></li>
                         
                         <li class="und"><a href="delivery.php">DELIVERY </li> 
-                        <li class="und"><a href="router/logout.php">LOG OUT</li> 
+                        <li class="und dropdown">
+                      <a href="javascript:void(0)" id="username">username</a>
+                        <div class="dropdown-content">
+                          <a href="router/logout.php">LOG OUT</a>
+                        </div>
+                     </li>
 
                         <a href="javascript:void(0);" 
                         style="font-size:15px; color:#f1ce02" 

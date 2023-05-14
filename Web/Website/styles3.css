@@ -186,5 +186,31 @@ justify-content: space-between;
 .Text_AboutUS{
     padding: 100px;
 }
+.dropdown {
+    position: relative;
+    z-index: 1;
+}
 
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+    background-color: #f2ab38;
+    color: black;
+    opacity: 1;
+    z-index:2; 
+}
+
+/* Media Query for smaller screens /
+@media (max-width: 768px) {
+    .dropdown-content {
+        min-width: 100px; / Adjust the width as needed */
+    }
 /*About*/

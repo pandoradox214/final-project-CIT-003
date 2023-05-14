@@ -75,14 +75,13 @@ include 'includes/wallet.php';
 					echo '<input id="'.$row["id"].'" name="'.$row["id"].'" type="number" data-error=".errorTxt'.$row["id"].'" value="0"><div class="errorTxt'.$row["id"].'"></div></td></tr>';
 				}
 				?>
-                    </tbody>
+      </tbody>
 </table>
               </div>
 			  <div class="input-field_col_s12">
               <i class="mdi-editor-mode-edit prefix"></i>
               <label for="description" id="labelNote">Any note(optional)</label><br>
-              <textarea id="description" name="description" class="materialize-textarea"></textarea>
-              
+              <textarea id="description" name="description"></textarea>
 			  </div>
 			  <div>
           <div class="txtArea">
@@ -93,17 +92,72 @@ include 'includes/wallet.php';
 			</form>
       <!--End Cointainer-->
             </div>
-            
-        
           </section>
-
             <footer>
               <a href="about.html"> <p>ABOUT</p></a>
               <a href="https://www.facebook.com/pareSilog.zamboanga"><img src="img/FB_logo.png" alt="logo" class = "fbLogo"></a>
             </footer>
         </div>
+ <!-- jQuery Library -->
+ <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <!--angularjs-->
+    <script type="text/javascript" src="js/plugins/angular.min.js"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- data-tables -->
+    <script type="text/javascript" src="js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/data-tables/data-tables-script.js"></script>	
+    <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery-validation/additional-methods.min.js"></script>
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.min.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+    <script type="text/javascript">
+    $("#formValidate").validate({
+        rules: {
+			<?php
+			$result = mysqli_query($con, "SELECT * FROM items where not deleted;");
+			while($row = mysqli_fetch_array($result))
+			{
+				echo $row["id"].':{
+				min: 0,
+				max: 10
+				},
+				';
+			}
+		echo '},';
+		?>
+        messages: {
+			<?php
+			$result = mysqli_query($con, "SELECT * FROM items where not deleted;");
+			while($row = mysqli_fetch_array($result))
+			{  
+				echo $row["id"].':{
+				min: "Minimum 0",
+				max: "Maximum 10"
+				},
+				';
+			}
+		echo '},';
+		?>
+        errorElement : 'div',
+        errorPlacement: function(error, element) {
+          var placement = $(element).data('error');
+          if (placement) {
+            $(placement).append(error)
+          } else {
+            error.insertAfter(element);
+          }
+        }
+     });
+    </script>
 </body>
 </html>
+
 <?php
 	}
 	else

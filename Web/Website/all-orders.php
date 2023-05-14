@@ -88,7 +88,9 @@ include 'includes/connect.php';
                 </div>
             </div>
             </li>
-            <li class="bold"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Dashboard</a>
+            <li class="bold"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-editor-insert-invitation"></i> Dashboard</a>
+            </li>
+            <li class="bold"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-maps-local-restaurant"></i> Edit Menu</a>
             </li>	
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
@@ -251,14 +253,7 @@ include 'includes/connect.php';
 
   </div>
   <!-- END MAIN -->
-
-
-
-  <!-- //////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
     <!-- ================================================
     Scripts
     ================================================ -->

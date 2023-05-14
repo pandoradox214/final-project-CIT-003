@@ -413,7 +413,7 @@ input.header-search-input:focus {
 #curve_chart {
   display: flex;
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 380px;
 }
 .notification-badge {
   position: relative;

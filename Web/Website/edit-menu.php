@@ -135,7 +135,7 @@ include 'includes/connect.php';
             </li>
             <li class="bold"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Dashboard</a>
             </li>	
-            <li class="bold active"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Edit Details</a>
+            <li class="bold active"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-maps-local-restaurant"></i> Edit Menu</a>
             </li>
             
                 <li class="no-padding">
@@ -187,7 +187,7 @@ include 'includes/connect.php';
         <div class="container">
           <p class="caption">Add, Edit or Remove Menu Items.</p>
           <div class="divider"></div>
-		  <form class="formValidate" id="formValidate" method="post" action="routers/menu-router.php" novalidate="novalidate">
+		  <form class="formValidate" id="formValidate" method="post" action="router/menu-router.php" novalidate="novalidate">
             <div class="row">
               <div class="col s12 m4 l3">
                 <h4 class="header">Manage Food Menu</h4>
@@ -236,7 +236,7 @@ include 'includes/connect.php';
                             </div>
             </div>
 			</form>
-		  <form class="formValidate" id="formValidate1" method="post" action="routers/add-item.php" novalidate="novalidate">
+		  <form class="formValidate" id="formValidate1" method="post" action="router/add-item.php" novalidate="novalidate">
             <div class="row">
               <div class="col s12 m4 l3">
                 <h4 class="header">Add Item</h4>

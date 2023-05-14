@@ -43,7 +43,7 @@ if($continue){
   <title>Provide Order Details</title>
 
   <!-- Favicons-->
-  <link rel="icon" href="images/favicon/favicon_32x32.png" sizes="32x32">
+  <link rel="icon" href="img/logo.jpg" sizes="32x32">
   <!-- Favicons-->
   <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
   <!-- For iPhone -->
@@ -80,18 +80,13 @@ if($continue){
             <nav class="navbar-color">
                 <div class="nav-wrapper">
                     <ul class="left">                      
-                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1">Food Ordering Management System</a></h1></li>
+                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="img/logo.jpg"  alt="Logo" width="80px" height="80px"></a></h1></li>
                     </ul>
-                    <ul class="right hide-on-med-and-down">                        
-                        <li><a href="#" class="waves-effect waves-block waves-light"><i class="mdi-editor-attach-money"><?php echo $balance;?></i></a>
-                        </li>
-                    </ul>					
                 </div>
             </nav>
         </div>
         <!-- end header nav-->
   </header>
-  <!-- END HEADER -->
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
 
@@ -120,8 +115,6 @@ if($continue){
                 </div>
             </div>
             </li>
-            <li class="bold"><a href="index.php" class="waves-effect waves-light-blue"><i class="mdi-maps-local-restaurant"></i> Order Food</a>
-            </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li class="bold"><a class="collapsible-header waves-effect waves-light-blue"><i class="mdi-editor-insert-invitation"></i> Orders</a>
@@ -133,25 +126,6 @@ if($continue){
 									$sql = mysqli_query($con, "SELECT DISTINCT status FROM orders WHERE customer_id = $user_id;");
 									while($row = mysqli_fetch_array($sql)){
                                     echo '<li><a href="orders.php?status='.$row['status'].'">'.$row['status'].'</a>
-                                    </li>';
-									}
-									?>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                        <li class="bold"><a class="collapsible-header waves-effect waves-light-blue"><i class="mdi-action-question-answer"></i> Tickets</a>
-                            <div class="collapsible-body">
-                                <ul>
-								<li><a href="tickets.php">All Tickets</a>
-                                </li>
-								<?php
-									$sql = mysqli_query($con, "SELECT DISTINCT status FROM tickets WHERE poster_id = $user_id AND not deleted;");
-									while($row = mysqli_fetch_array($sql)){
-                                    echo '<li><a href="tickets.php?status='.$row['status'].'">'.$row['status'].'</a>
                                     </li>';
 									}
 									?>
@@ -259,7 +233,7 @@ if($continue){
 		</div>
 	</div>';
 ?>
-<form action="routers/order-router.php" method="post">
+<form action="router/order-router.php" method="post">
 <?php
 foreach ($_POST as $key => $value)
 {
@@ -302,15 +276,6 @@ foreach ($_POST as $key => $value)
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-   <!-- START FOOTER -->
-   <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-      <span>Copyright © <?php echo date("Y"); ?><span class="right"><a class="grey-text text-lighten-4" href="https://sourcecodester.com">SourceCodester</a></span>
-        </div>
-    </div>
-  </footer>
-    <!-- END FOOTER -->
 
 
 

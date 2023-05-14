@@ -130,9 +130,9 @@ include 'includes/connect.php';
                 </div>
             </div>
             </li>
-            <li class="bold"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Dashboard</a>
+            <li class="bold"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-editor-insert-invitation"></i> Dashboard</a>
             </li>	
-            <li class="bold"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Edit Details</a>
+            <li class="bold"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-maps-local-restaurant"></i> Edit Details</a>
             </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
@@ -185,7 +185,7 @@ include 'includes/connect.php';
           <div class="divider"></div>
           <!--editableTable-->
           <div id="editableTable" class="section">
-		  <form class="formValidate" id="formValidate1" method="post" action="routers/user-router.php" novalidate="novalidate">
+		  <form class="formValidate" id="formValidate1" method="post" action="router/user-router.php" novalidate="novalidate">
             <div class="row">
               <div class="col s12 m4 l3">
                 <h4 class="header">List of users</h4>
@@ -248,7 +248,7 @@ include 'includes/connect.php';
                             </div>
             </div>
 			</form>
-		  <form class="formValidate" id="formValidate" method="post" action="routers/add-users.php" novalidate="novalidate">
+		  <form class="formValidate" id="formValidate" method="post" action="router/add-users.php" novalidate="novalidate">
             <div class="row">
               <div class="col s12 m4 l3">
                 <h4 class="header">Add User</h4>

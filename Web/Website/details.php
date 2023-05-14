@@ -103,8 +103,8 @@ $username = $row['username'];
             <nav class="navbar-color">
                 <div class="nav-wrapper">
                     <ul class="left">                      
-                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1">Food Ordering Management System</a></h1></li>
-                    </ul>				
+                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="img/logo.jpg"  alt="Logo" width="80px" height="80px"></a></h1></li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -139,8 +139,6 @@ $username = $row['username'];
                 </div>
             </div>
             </li>
-            <li class="bold"><a href="index.php" class="waves-effect waves-light-blue"><i class="mdi-maps-local-restaurant"></i> Order Food</a>
-            </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li class="bold"><a class="collapsible-header waves-effect waves-light-blue"><i class="mdi-editor-insert-invitation"></i> Orders</a>
@@ -159,30 +157,11 @@ $username = $row['username'];
                             </div>
                         </li>
                     </ul>
-                </li>
-                <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                        <li class="bold"><a class="collapsible-header waves-effect waves-light-blue"><i class="mdi-action-question-answer"></i> Tickets</a>
-                            <div class="collapsible-body">
-                                <ul>
-								<li><a href="tickets.php">All Tickets</a>
-                                </li>
-								<?php
-									$sql = mysqli_query($con, "SELECT DISTINCT status FROM tickets WHERE poster_id = $user_id AND not deleted;");
-									while($row = mysqli_fetch_array($sql)){
-                                    echo '<li><a href="tickets.php?status='.$row['status'].'">'.$row['status'].'</a>
-                                    </li>';
-									}
-									?>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>			
+                </li>		
             <li class="bold active"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Edit Details</a>
             </li>		
             
-            <li class="bold"><a href="routers/logout.php" class="waves-effect waves-light-blue"><i class="mdi-hardware-keyboard-tab"></i> Logout</a></li>	
+            <li class="bold"><a href="router/logout.php" class="waves-effect waves-light-blue"><i class="mdi-hardware-keyboard-tab"></i> Logout</a></li>	
         </ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only  light-blue"><i class="mdi-navigation-menu"></i></a>
         </aside>
@@ -323,15 +302,7 @@ $username = $row['username'];
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-   <!-- START FOOTER -->
-   <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-      <span>Copyright © <?php echo date("Y"); ?><span class="right"><a class="grey-text text-lighten-4" href="https://sourcecodester.com">SourceCodester</a></span>
-        </div>
-    </div>
-  </footer>
-    <!-- END FOOTER -->
+
 
 
 

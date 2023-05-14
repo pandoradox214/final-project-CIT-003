@@ -70,3 +70,6 @@ textarea{
     width: 200px;
     background-color: #f5f3f3;
 }
+.error{
+    color: red;
+}

@@ -78,7 +78,6 @@ include 'includes/connect.php';
       right:70px;
   }
   </style> 
-
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -104,7 +103,7 @@ include 'includes/connect.php';
 
         var options = {
           title: 'Sales Average',
-          curveType: 'function',
+          curveType: 'function',  
           legend: { position: 'bottom' }
         };
 
@@ -115,6 +114,7 @@ include 'includes/connect.php';
     </script>
 
 </head>
+
 
 <body>
   <!-- Start Page Loading -->
@@ -172,7 +172,7 @@ include 'includes/connect.php';
             </li>
             <li class="bold active"><a href="details.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Dashboard</a>
             </li>
-            <li class="bold"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-social-person"></i> Edit Details</a>
+            <li class="bold"><a href="edit-menu.php" class="waves-effect waves-light-blue"><i class="mdi-maps-local-restaurant"></i> Edit Menu</a>
             </li>	
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
@@ -315,6 +315,8 @@ include 'includes/connect.php';
 
 
           <div id="curve_chart" style="width: 900px; height: 500px"></div>
+          <div style="display: flex; justify-content: center; align-items: center; height: 100vh;"><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FManila&hl=en&src=MjEwNjM2QGFkenUuZWR1LnBo&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20wMWExMGMzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19jbGFzc3Jvb20yODViYWE2OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%23007b83&color=%230B8043&color=%23137333"
+             style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" ></iframe></div>
 
       </section>
       <!-- END CONTENT -->
