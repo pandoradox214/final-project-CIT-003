@@ -23,14 +23,14 @@ $deleted = $_POST['deleted'];
 $sql = "INSERT INTO users (username, password, name, email, contact, address, role, verified, deleted) VALUES ('$username', '$password', '$name', '$email', $contact, '$address', '$role', $verified, $deleted)";
 if($con->query($sql)==true){
 $user_id =  $con->insert_id;
-$sql = "INSERT INTO wallet(customer_id) VALUES ($user_id)";
-if($con->query($sql)==true){
-	$wallet_id =  $con->insert_id;
-	$cc_number = number(16);
-	$cvv_number = number(3);
-	$sql = "INSERT INTO wallet_details(wallet_id, number, cvv) VALUES ($wallet_id, $cc_number, $cvv_number)";
-	$con->query($sql);
-}	
+// $sql = "INSERT INTO wallet(customer_id) VALUES ($user_id)";
+// if($con->query($sql)==true){
+// 	$wallet_id =  $con->insert_id;
+// 	$cc_number = number(16);
+// 	$cvv_number = number(3);
+// 	$sql = "INSERT INTO wallet_details(wallet_id, number, cvv) VALUES ($wallet_id, $cc_number, $cvv_number)";
+// 	$con->query($sql);
+// }	
 }
 header("location: ../users.php");
 ?>

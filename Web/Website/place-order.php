@@ -1,9 +1,10 @@
 <?php
 include 'includes/connect.php';
-include 'includes/wallet.php';
+// include 'includes/wallet.php';
 $total = 0;
 	if($_SESSION['customer_sid']==session_id())
 	{
+$user_id=$_SESSION['user_id'];
 $result = mysqli_query($con, "SELECT * FROM users where id = $user_id");
 while($row = mysqli_fetch_array($result)){
 $name = $row['name'];	
@@ -302,6 +303,7 @@ $verified = $row['verified'];
     </li>';
 		if(!empty($_POST['description']))
 		echo '<li class="collection-item avatar"><p><strong>Note: </strong>'.htmlspecialchars($_POST['description']).'</p></li>';
+
 ?>
 </ul>
 

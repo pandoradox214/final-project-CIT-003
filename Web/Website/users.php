@@ -201,7 +201,7 @@ include 'includes/connect.php';
                         <th data-field="price">Role</th>
                         <th data-field="price">Verified</th>
                         <th data-field="price">Enable</th>
-                        <th data-field="price">Wallet</th>						
+                        <!-- <th data-field="price">Wallet</th>						 -->
                       </tr>
                     </thead>
 
@@ -227,16 +227,17 @@ include 'includes/connect.php';
                       <option value="0"'.(!$row['deleted'] ? 'selected' : '').'>Enable</option>
                     </select></td>';
 					$key = $row['id'];
-					$sql = mysqli_query($con,"SELECT * from wallet WHERE customer_id = $key;");
-					if($row1 = mysqli_fetch_array($sql)){
-						$wallet_id = $row1['id'];
-						$sql1 = mysqli_query($con,"SELECT * from wallet_details WHERE wallet_id = $wallet_id;");
-						if($row2 = mysqli_fetch_array($sql1)){
-							$balance = $row2['balance'];
-						}
-					}
-					echo '<td><label for="balance">Balance</label><input id="balance" name="'.$row['id'].'_balance" value="'.$balance.'" type="number" data-error=".errorTxt01"><div class="errorTxt01"></div></td></tr>'; 					
-				}
+        }
+				// 	$sql = mysqli_query($con,"SELECT * from wallet WHERE customer_id = $key;");
+				// 	if($row1 = mysqli_fetch_array($sql)){
+				// 		// $wallet_id = $row1['id'];
+				// 		// $sql1 = mysqli_query($con,"SELECT * from wallet_details WHERE wallet_id = $wallet_id;");
+				// // 		if($row2 = mysqli_fetch_array($sql1)){
+				// // 			$balance = $row2['balance'];
+				// // 		}
+				// // 	}
+				// // 	echo '<td><label for="balance">Balance</label><input id="balance" name="'.$row['id'].'_balance" value="'.$balance.'" type="number" data-error=".errorTxt01"><div class="errorTxt01"></div></td></tr>'; 					
+				// // }
 				?>
                     </tbody>
 </table>
@@ -367,9 +368,9 @@ include 'includes/connect.php';
             address: {
                 minlength: 10,
 			},		
-            balance: {
-                required: true,
-			},				
+      //       balance: {
+      //           required: true,
+			// },				
 		},
         messages: {
            username:{
@@ -391,9 +392,9 @@ include 'includes/connect.php';
            address:{
                 minlength: "Address must be atleast 10 characters long",		
             },		
-           balance:{
-                required: "Please provide a balance.",		
-            },				
+          //  balance:{
+          //       required: "Please provide a balance.",		
+          //   },				
 		},
         errorElement : 'div',
         errorPlacement: function(error, element) {
@@ -410,15 +411,14 @@ include 'includes/connect.php';
 
 </html>
 <?php
-	}
-	else
-	{
-		if($_SESSION['customer_sid']==session_id())
-		{
-			header("location:index.php");		
-		}
-		else{
-			header("location:login.php");
-		}
-	}
+    }
+    else{
+      if($_SESSION['customer_sid']==session_id())
+      {
+        header("location:index.php");		
+      }
+      else{
+        header("location:login.php");
+      }
+    }
 ?>

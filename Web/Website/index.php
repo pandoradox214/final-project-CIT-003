@@ -3,7 +3,7 @@ include 'includes/connect.php';
 
 if(isset($_SESSION['user_id']))
 {
-include 'includes/wallet.php';
+// include 'includes/wallet.php';
 ?>
 <!--Test V.1.0.0.1-->
 <!DOCTYPE html>

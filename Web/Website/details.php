@@ -224,26 +224,26 @@ $username = $row['username'];
 
                       <!-- <?php 
 
-                        $sql = mysqli_query($con, "SELECT wd.* FROM wallet_details wd inner join `wallet` w on wd.wallet_id = w.id WHERE w.customer_id = $user_id");
-                        while($row = mysqli_fetch_array($sql)){
-                          $number = $row['number'];	
-                          $cvv = $row['cvv'];
-                        echo '<div class="row">
-                        <div class="input-field col s6">
-                          <i class="mdi-action-credit-card prefix"></i>
-                          <input name="number" id="num" type="text" maxlength="16"  value="'. $number .'" data-error=".errorTxt3">
-                          <label for="email" class="">My Card Number</label>
-						  <div class="errorTxt3"></div>
-                        </div>
+              //           $sql = mysqli_query($con, "SELECT wd.* FROM wallet_details wd inner join `wallet` w on wd.wallet_id = w.id WHERE w.customer_id = $user_id");
+              //           while($row = mysqli_fetch_array($sql)){
+              //             $number = $row['number'];	
+              //             $cvv = $row['cvv'];
+              //           echo '<div class="row">
+              //           <div class="input-field col s6">
+              //             <i class="mdi-action-credit-card prefix"></i>
+              //             <input name="number" id="num" type="text" maxlength="16"  value="'. $number .'" data-error=".errorTxt3">
+              //             <label for="email" class="">My Card Number</label>
+						  // <div class="errorTxt3"></div>
+              //           </div>
 
-                        <div class="input-field col s6">
-                          <i class="mdi-communication-vpn-key prefix"></i>
-                          <input name="cvv" id="num" type="text" maxlength="3"  value="'. $cvv .'" data-error=".errorTxt3">
-                          <label for="email" class="">My Card Number</label>
-						  <div class="errorTxt3"></div>
-                        </div>
-                      </div>';
-                        }                      
+              //           <div class="input-field col s6">
+              //             <i class="mdi-communication-vpn-key prefix"></i>
+              //             <input name="cvv" id="num" type="text" maxlength="3"  value="'. $cvv .'" data-error=".errorTxt3">
+              //             <label for="email" class="">My Card Number</label>
+						  // <div class="errorTxt3"></div>
+              //           </div>
+              //         </div>';
+              //           }                      
                       ?> -->
 
                       <div class="row">

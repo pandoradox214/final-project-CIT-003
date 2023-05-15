@@ -238,7 +238,25 @@ include 'includes/connect.php';
 								}
 								echo'</div></li>';
 					}
-					?>
+                    if ($status == 'Delivered') {
+                        // Get the current month and year  and day
+                        $monthYear = date('Y-m-d');
+
+                        // Calculate the total quantity of items in the order
+                        $totalQuantity = 0;
+                        $sql1 = mysqli_query($con, "SELECT SUM(quantity) AS total FROM order_details WHERE order_id = $order_id;");
+                        $row1 = mysqli_fetch_array($sql1);
+                        if ($row1['total']) {
+                            $totalQuantity = $row1['total'];
+                        }
+
+                        // Update the linechart database with the month-year and total quantity
+                        $linechartQuery = "INSERT INTO linechart (MonthYear, Quantity) VALUES ('$monthYear', $totalQuantity)
+                                          ON DUPLICATE KEY UPDATE Quantity = Quantity + $totalQuantity;";
+                        mysqli_query($con, $linechartQuery);
+                    }
+
+                    ?>
 					</ul>
                 </div>
               </div>

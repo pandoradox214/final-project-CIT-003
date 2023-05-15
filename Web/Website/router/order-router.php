@@ -1,9 +1,13 @@
 <?php
 include '../includes/connect.php';
-include '../includes/wallet.php';
+// include '../includes/wallet.php';
 $total = 0;
+$user_id=$_SESSION['user_id'];
 $address = htmlspecialchars($_POST['address']);
 $description =  htmlspecialchars($_POST['description']);
+if (empty($description)){
+	$description = 'No description';
+}
 $payment_type = $_POST['payment_type'];
 $total = $_POST['total'];
 	$sql = "INSERT INTO orders (customer_id, payment_type, address, total, description) VALUES ($user_id, '$payment_type', '$address', $total, '$description')";
@@ -22,11 +26,11 @@ $total = $_POST['total'];
 			$con->query($sql) === TRUE;		
 			}
 		}
-		if($_POST['payment_type'] == 'Wallet'){
-		$balance = $balance - $total;
-		$sql = "UPDATE wallet_details SET balance = $balance WHERE wallet_id = $wallet_id;";
-		$con->query($sql) === TRUE;
-		}
+		// if($_POST['payment_type'] == 'Wallet'){
+		// $balance = $balance - $total;
+		// $sql = "UPDATE wallet_details SET balance = $balance WHERE wallet_id = $wallet_id;";
+		// $con->query($sql) === TRUE;
+		// }
 			header("location: ../orders.php");
 	}
 

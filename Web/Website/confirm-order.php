@@ -1,28 +1,28 @@
 <?php
 include 'includes/connect.php';
-include 'includes/wallet.php';
-$continue=0;
+// include 'includes/wallet.php';
 $total = 0;
 if($_SESSION['customer_sid']==session_id())
 {
-		if($_POST['payment_type'] == 'Wallet'){
-		$_POST['cc_number'] = str_replace('-', '', $_POST['cc_number']);
-		$_POST['cc_number'] = str_replace(' ', '', $_POST['cc_number']); 
-		$_POST['cvv_number'] = (int)str_replace('-', '', $_POST['cvv_number']);
-		$sql1 = mysqli_query($con, "SELECT * FROM wallet_details where wallet_id = $wallet_id");
-		while($row1 = mysqli_fetch_array($sql1)){
-			$card = $row1['number'];
-			$cvv = $row1['cvv'];
-			if($card == $_POST['cc_number'] && $cvv==$_POST['cvv_number'])
-			$continue=1;
-			else
-				header("location:index.php");
-		}
-		}
-		else
-			$continue=1;
+        $continue=1;
+		// if($_POST['payment_type'] == 'Wallet'){
+		// $_POST['cc_number'] = str_replace('-', '', $_POST['cc_number']);
+		// $_POST['cc_number'] = str_replace(' ', '', $_POST['cc_number']); 
+		// $_POST['cvv_number'] = (int)str_replace('-', '', $_POST['cvv_number']);
+		// $sql1 = mysqli_query($con, "SELECT * FROM wallet_details where wallet_id = $wallet_id");
+		// while($row1 = mysqli_fetch_array($sql1)){
+		// 	$card = $row1['number'];
+		// 	$cvv = $row1['cvv'];
+		// 	if($card == $_POST['cc_number'] && $cvv==$_POST['cvv_number'])
+		// 	$continue=1;
+		// 	else
+		// 		header("location:index.php");
+		// }
+		// }
+		// else
+		// 	$continue=1;
 }
-
+$user_id=$_SESSION['user_id'];
 $result = mysqli_query($con, "SELECT * FROM users where id = $user_id");
 while($row = mysqli_fetch_array($result)){
 	$name = $row['name'];
@@ -219,19 +219,19 @@ if($continue){
     </li>';
 	if(!empty($_POST['description']))
 		echo '<li class="collection-item avatar"><p><strong>Note: </strong>'.htmlspecialchars($_POST['description']).'</p></li>';
-	if($_POST['payment_type'] == 'Wallet')
-	echo '<div id="basic-collections" class="section">
-		<div class="row">
-			<div class="collection">
-				<a href="#" class="collection-item">
-					<div class="row"><div class="col s7">Current Balance</div><div class="col s3">'.$balance.'</div></div>
-				</a>
-				<a href="#" class="collection-item active">
-					<div class="row"><div class="col s7">Balance after purchase</div><div class="col s3">'.($balance-$total).'</div></div>
-				</a>
-			</div>
-		</div>
-	</div>';
+	// if($_POST['payment_type'] == 'Wallet')
+	// echo '<div id="basic-collections" class="section">
+	// 	<div class="row">
+	// 		<div class="collection">
+	// 			<a href="#" class="collection-item">
+	// 				<div class="row"><div class="col s7">Current Balance</div><div class="col s3">'.$balance.'</div></div>
+	// 			</a>
+	// 			<a href="#" class="collection-item active">
+	// 				<div class="row"><div class="col s7">Balance after purchase</div><div class="col s3">'.($balance-$total).'</div></div>
+	// 			</a>
+	// 		</div>
+	// 	</div>
+	// </div>';
 ?>
 <form action="router/order-router.php" method="post">
 <?php

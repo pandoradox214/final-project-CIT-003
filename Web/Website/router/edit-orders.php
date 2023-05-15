@@ -1,5 +1,5 @@
 <?php
-include '../includes/connect.php';
+// include '../includes/connect.php';
 $status = $_POST['status'];
 $id = $_POST['id'];
 
